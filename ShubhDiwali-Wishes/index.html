@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>✨ शुभ दीवाली ✨🪔🎉</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="background-video">
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="container text-center">
+    <audio src="music.mp3" id="audio"></audio>
+
+    <div id="home">
+      <img src="diya.gif" alt="diya" class="img-fluid" width="200">
+      <h1 class="display-5">🪔 इस प्रकाश पर्व पर आपके जीवन में आनंद और उजाला भर जाए, ऐसी शुभकामनाएं! ✨ शुभ दीवाली !! 🎆🌟🪔</h1>
+      <div class="d-flex gap-2 align-items-center justify-content-center mt-4">
+        <button class="btn btn-dark" onclick="playAudio()">Click Me</button>
+        <button class="btn btn-dark" onclick="displayWisher()">Diwali Wisher</button>
+      </div>
+    </div>
+
+    <div id="wish-box">
+      <h1>Diwali Wish Generator</h1>
+      <div id="wish-container">
+        <textarea id="random-wish" rows="5" class="form-control mt-3" placeholder="Click the button to generate a random Diwali wish." disabled></textarea>
+      </div>
+      <div class="mt-4 d-flex align-items-center justify-content-center gap-2 flex-wrap">
+        <button id="generate-wish" class="btn btn-light">Generate Wish</button>
+        <button id="copy-wish" class="btn btn-light">Copy Wish</button>
+        <button class="btn btn-light" onclick="window.location.reload()">Home</button>
+      </div>
+    </div>
+  </div>
+  <footer class="fixed-bottom">
+    <p class="text-center">By Jay Thakar</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
